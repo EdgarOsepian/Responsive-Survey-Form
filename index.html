@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Market Research Survey</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="title">IT market research survey</h1>
+      <p id="description">
+        Thank you for taking the time to fill out this survey for a research
+      </p>
+    </header>
+    <form action="#" id="survey-form" method="POST">
+      <div class="group-form">
+        <label for="name" id="name-label">Full Name</label>
+        <input
+          type="text"
+          id="name"
+          class="form-control"
+          name="name"
+          placeholder="Enter your name"
+          required
+        />
+      </div>
+      <div class="group-form">
+        <label for="email" id="email-label">Email</label>
+        <input
+          type="email"
+          id="email"
+          class="form-control"
+          name="email"
+          placeholder="Enter your email"
+          required
+        />
+      </div>
+      <div class="group-form">
+        <label for="number" id="number-label">Age (optional)</label>
+        <input
+          type="number"
+          id="number"
+          class="form-control"
+          name="age"
+          placeholder="Age"
+          min="10"
+          max="99"
+        />
+      </div>
+
+      <!--Dropdown menu-->
+      <div class="group-form">
+        <p>Which option best describes your current role?</p>
+        <select name="job" id="dropdown" class="form-control" required>
+          <option disabled selected value>Select current role</option>
+          <option value="dev">Software developer</option>
+          <option value="sysadmin">System administrator</option>
+          <option value="devops">Devops engineer</option>
+          <option value="design">UX/UI designer</option>
+          <option value="qa">Quality assuranse</option>
+          <option value="pm">Project manager</option>
+          <option value="dbadmin">Database administrator</option>
+        </select>
+      </div>
+
+      <!--Radio buttons-->
+      <div class="group-form">
+        <fieldset class="details">
+          <legend>Role details</legend>
+          <div class="xp">
+            <p>Experience</p>
+            <label>
+              <input
+                type="radio"
+                name="exp"
+                value="intern"
+                class="input-radio"
+              />Intern
+            </label>
+            <label>
+              <input
+                type="radio"
+                name="exp"
+                value="junior"
+                class="input-radio"
+                checked
+              />Junior
+            </label>
+            <label>
+              <input
+                type="radio"
+                name="exp"
+                value="mid"
+                class="input-radio"
+              />Middle
+            </label>
+            <label>
+              <input
+                type="radio"
+                name="exp"
+                value="senior"
+                class="input-radio"
+              />Senior/Team lead
+            </label>
+          </div>
+          <div class="sal">
+            <p>Salary</p>
+            <label>
+              <input
+                type="radio"
+                name="salary"
+                value="less"
+                class="input-radio"
+              />Less than $60,000
+            </label>
+            <label>
+              <input
+                type="radio"
+                name="salary"
+                value="60-90"
+                class="input-radio"
+                checked
+              />$60,000-$90,000
+            </label>
+            <label>
+              <input
+                type="radio"
+                name="salary"
+                value="90-120"
+                class="input-radio"
+              />$90,000-$120,000
+            </label>
+            <label>
+              <input
+                type="radio"
+                name="salary"
+                value="120+"
+                class="input-radio"
+              />$120,000+
+            </label>
+          </div>
+        </fieldset>
+      </div>
+
+      <!--Checkboxes-->
+      <div class="group-form">
+        <p>
+          Which programming languages, frameworks and technologies you`re using
+          or want to next year
+        </p>
+        <label>
+          <input
+            type="checkbox"
+            name="tech"
+            value=".js"
+            class="input-checkbox"
+          />Javascript
+        </label>
+        <label>
+          <input
+            type="checkbox"
+            name="tech"
+            value=".ts"
+            class="input-checkbox"
+          />Typescript
+        </label>
+        <label>
+          <input
+            type="checkbox"
+            name="tech"
+            value=".java"
+            class="input-checkbox"
+          />Java
+        </label>
+        <label>
+          <input
+            type="checkbox"
+            name="tech"
+            value=".py"
+            class="input-checkbox"
+          />Python
+        </label>
+        <label>
+          <input
+            type="checkbox"
+            name="tech"
+            value=".rb"
+            class="input-checkbox"
+          />Ruby
+        </label>
+        <label>
+          <input
+            type="checkbox"
+            name="tech"
+            value="c#"
+            class="input-checkbox"
+          />C#/.Net
+        </label>
+        <label>
+          <input
+            type="checkbox"
+            name="tech"
+            value="c++"
+            class="input-checkbox"
+          />C/C++
+        </label>
+        <label>
+          <input
+            type="checkbox"
+            name="tech"
+            value="html-css"
+            class="input-checkbox"
+          />HTML/CSS
+        </label>
+        <label>
+          <input
+            type="checkbox"
+            name="tech"
+            value="react"
+            class="input-checkbox"
+          />React/React native
+        </label>
+        <label>
+          <input
+            type="checkbox"
+            name="tech"
+            value="flutter"
+            class="input-checkbox"
+          />Flutter
+        </label>
+        <label>
+          <input
+            type="checkbox"
+            name="tech"
+            value="node"
+            class="input-checkbox"
+          />Node.js
+        </label>
+        <label>
+          <input
+            type="checkbox"
+            name="tech"
+            value="vue"
+            class="input-checkbox"
+          />Vue.js
+        </label>
+        <label>
+          <input
+            type="checkbox"
+            name="tech"
+            value="angular"
+            class="input-checkbox"
+          />Angular.js
+        </label>
+        <label>
+          <input
+            type="checkbox"
+            name="tech"
+            value="kubernetes"
+            class="input-checkbox"
+          />Kubernetes
+        </label>
+        <label>
+          <input
+            type="checkbox"
+            name="tech"
+            value="docker"
+            class="input-checkbox"
+          />Docker
+        </label>
+      </div>
+
+      <!--Textarea-->
+      <div class="group-form">
+        <p>Any comments or suggestions?</p>
+        <textarea
+          name="comment"
+          class="input-textarea"
+          placeholder="Enter your comment here"
+        ></textarea>
+      </div>
+
+      <!--Button-->
+      <div class="group-form">
+        <input type="submit" id="submit" value="Submit" />
+      </div>
+    </form>
+  </body>
+</html>
