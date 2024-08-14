@@ -87,3 +87,34 @@ legend {
 [type="submit"]:hover {
     opacity: 0.8;
 }
+
+/* Responsive Starts Here */
+
+@media screen and (max-width: 800px) {
+    #survey-form {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #survey-form {
+        width: 100%;
+        padding: 2.5rem 0.8rem;
+    }
+
+    .form-control,
+    .input-textarea,
+    [type="submit"] {
+        width: 90%;
+    }
+
+    .details {
+        padding-right: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .details {
+        flex-wrap: wrap;
+    }
+}
